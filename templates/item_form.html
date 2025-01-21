@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Form</title>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap.css">
+</head>
+<body class="container mt-5">
+    <h1 class="mb-4">Item Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+    <a href="{% url 'item_list' %}" class="btn btn-secondary mt-3">Back to List</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Django Crud{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap.css' %}">
+</head>
+<body class="container mt-5">
+    <header class="mb-4">
+        <h1>{% block header %}Django CRUD Application{% endblock %}</h1>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+    <footer class="mt-5">
+        <p class="text-center">Copyright &copy; 2025 Django Crud Application</p>
+    </footer>
+</body>
+</html>
